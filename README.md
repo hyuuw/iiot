@@ -1,7 +1,7 @@
 
 ### Smart Coaster - 114NTUST\_IIOT
 
-* ##### When was the last time you took a sip of water?
+* # When was the last time you took a sip of water?
 
 For students like us, or for 'office workers' who spend long hours at a desk, the answer is often, 'I don't remember.' There are three main reasons for this:
 
