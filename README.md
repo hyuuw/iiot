@@ -19,8 +19,8 @@ For students like us, or for office workers who spend long hours at a desk, the 
 ## Team Members's Role
 | Name     | Student ID  | Assignment |
 |----------|-------------|---------|
-| 楊婕     | M11451001   | 未完成   |
-| 楓尹翔   | M11451007   | 進行中   |
-| 簡翊程   | M11451011   | 已完成   |
-| 顏梓淮   | M11451027   | 未完成   |
-| 吳家瑜   | M11451029   | 未完成   |
+| 楊婕     | M11451001   |    |
+| 楓尹翔   | M11451007   |    |
+| 簡翊程   | M11451011   |    |
+| 顏梓淮   | M11451027   |    |
+| 吳家瑜   | M11451029   |    |
