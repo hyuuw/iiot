@@ -25,4 +25,5 @@ For students like us, or for office workers who spend long hours at a desk, the 
 | 顏梓淮   | M11451027   |    |
 | 吳家瑜   | M11451029   |    |
 
-image/S__58015818.jpg
+## 電路圖
+![電路圖](./image/S__58015818.jpg)
