@@ -27,11 +27,11 @@ For students like us, or for office workers who spend long hours at a desk, the 
 
 ## Hardware
 
-Circuit diagram
+Assemble the components according to the diagram.
 ![電路圖](./image/cd.jpg)
 
 
-* For USB Type-C TO HX711 (RED line)
+* For ESP32 TO HX711  (RED line)
 
   。The VCC pin connects to the 3V3 pin.
 
@@ -41,7 +41,7 @@ Circuit diagram
 
   。The SCK pin connects to GPIO9.
 
-* For USB Type-C TO LED strip (BLUE line)
+* For ESP32 TO LED strip  (BLUE line)
 
   。GND connects to GND.
 
@@ -49,7 +49,7 @@ Circuit diagram
 
   。+5V connects to 5V.
 
-* For USB Tybe-C TO Button (GREEN line)
+* For ESP32 TO Button  (GREEN line)
 
   。Point A connects to GPIO18.
 
