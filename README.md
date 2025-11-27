@@ -28,4 +28,4 @@ For students like us, or for office workers who spend long hours at a desk, the 
 ## Hardware
 
 Circuit diagram
-![電路圖](./image/S__58015818.jpg)
+![電路圖](./image/S__58114216.jpg)
