@@ -31,26 +31,26 @@ Circuit diagram
 ![電路圖](./image/cd.jpg)
 
 
-For USB Type-C TO HX711 (RED line)
-  
-。VCC connects to 3V3
+* For USB Type-C TO HX711 (RED line)
 
-。DT connects to GPIO8
+  。The VCC pin connects to the 3V3 pin.
 
-。GND connects to GND
+  。The DT pin connects to GPIO8.
 
-。SCK connects to GPIO9
+  。GND connects to GND.
 
-For USB Type-C TO LED strip (BLUE line)
+  。The SCK pin connects to GPIO9.
 
-。GND connects to GND
+* For USB Type-C TO LED strip (BLUE line)
 
-。DIN connects to GPIO10
+  。GND connects to GND.
 
-。+5V connects to 5V
+  。DIN connects to GPIO10.
 
-For USB Tybe-C TO Button (GREEN line)
+  。+5V connects to 5V.
 
-。Point A connects to GPIO18
+* For USB Tybe-C TO Button (GREEN line)
 
-。Point B connects to GND
+  。Point A connects to GPIO18.
+
+  。Point B connects to GND.
