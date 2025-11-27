@@ -28,4 +28,29 @@ For students like us, or for office workers who spend long hours at a desk, the 
 ## Hardware
 
 Circuit diagram
-![電路圖](./image/S__58114216.jpg)
+![電路圖](./image/cd.jpg)
+
+
+For USB Type-C TO HX711 (RED line)
+  
+。VCC-3V3
+
+。DT-GPIO8
+
+。GND-GND
+
+。SCK-GPIO9
+
+For USB Type-C TO LED strip (BLUE line)
+
+。GND-GND
+
+。DIN-GPIO10
+
+。+5V-5V
+
+For USB Tybe-C TO Button (GREEN line)
+
+。Point A-GPIO18
+
+。Point B-GND
