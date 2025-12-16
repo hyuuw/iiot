@@ -76,24 +76,27 @@ graph TD
     %% 資料流
     Env -- "Original Weight Signal" --> System
     User -- "Button Operation (Reset)" --> System
-    NTP -- "Current Date and Time Data" --> System
+    NTP -- "Current Date and<br/>Time Data" --> System
 
-    System -- "Visual Feedback (LED Color/Flashing)" --> User
-    System -- "Sensor Data and Status   (V0-V3)" --> Cloud
+    System -- "Visual Feedback<br/>(LED Color/Flashing)" --> User
+    System -- "Sensor Data and<br/>Status (V0-V3)" --> Cloud
 ```
 
 ## DFD Level 1: Decomposition Diagram
 
 ```mermaid
 graph TD
-    %% --- 強制排版設定 ---
-    %% curve: stepAfter (直角走線，像電路圖)
-    %% nodeSpacing: 100 (左右拉開距離，避免文字互撞)
-    %% rankSpacing: 80  (上下拉開距離)
+    %% --- 風格設定區 ---
+    %% edgeLabelBackground: #e0e0e0aa (灰底標籤)
+    %% curve: stepAfter (直角線條)
     %%{init: {
       'theme': 'base',
-      'themeVariables': { 'primaryColor': '#fff9c4', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#fff'},
-      'flowchart': { 'curve': 'stepAfter', 'nodeSpacing': 100, 'rankSpacing': 80 }
+      'themeVariables': { 
+        'primaryColor': '#fff9c4', 
+        'edgeLabelBackground': '#e0e0e0aa', 
+        'tertiaryColor': '#fff'
+      },
+      'flowchart': { 'curve': 'stepAfter', 'nodeSpacing': 150, 'rankSpacing': 100 }
     }}%%
 
     %% --- 樣式定義 ---
@@ -102,50 +105,44 @@ graph TD
     classDef store fill:#ffebee,stroke:#b71c1c,stroke-width:2px;
     classDef output fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
 
-    %% --- 節點定義 (縮短了文字以防擁擠) ---
+    %% --- 節點定義 (已加上雙引號保護特殊字元) ---
     Env[Physical Environment]:::entity
     User[User]:::entity
     NTP[NTP Time Server]:::entity
     
     subgraph Core [Firmware Core Logic]
         direction TB
-        P1(1.0 Sensor Data Collection):::process
-        P3(3.0 Data Management):::process
-        D1[(D1: EEPROM)]:::store
-        P2(2.0 Water Consumption Calculation):::process
-        P4(4.0 Output Control):::process
-        P5(5.0 Cloud Communication):::process
+        P1("1.0 Sensor Data Collection<br/>Filtering/Stable Reading"):::process
+        P3("3.0 Data Management<br/>EEPROM/NTP/Reset"):::process
+        D1[("D1: EEPROM")]:::store
+        P2("2.0 Water Consumption Calculation<br/>Determine Drinking/Adding Water"):::process
+        P4("4.0 Output Control<br/>LED/Animation"):::process
+        P5("5.0 Cloud Communication<br/>Blynk Timer"):::process
     end
 
     Cloud[Blynk Cloud Platform]:::output
 
-    %% --- 連線關係 (使用簡短標籤) ---
-    %% 輸入
-    Env -->|Original Signal| P1
-    User -->|Button| P3
-    NTP -->|Time| P3
+    %% --- 連線關係 (使用 -- "文字" --> 語法以避免括號報錯) ---
+    Env -- "Original Weight Signal" --> P1
+    User -- "ButtonSetting Command" --> P3
+    NTP -- "Time Data" --> P3
 
-    %% 內部處理
-    P1 -->|Stable Weight| P2
+    P1 -- "Stable Total Weight" --> P2
     
-    %% EEPROM 存取 (強制直角可能會重疊，稍微調整順序)
-    P3 -->|Write| D1
-    D1 -->|Read| P3
+    P3 -- "Update Storage Data" --> D1
+    D1 -- "Read Storage Data" --> P3
 
-    %% 核心迴圈
-    P3 -->|Read Empty Bottle Weight| P2
-    P2 -->|Calculate Increment| P3
+    P3 -- "Read: Empty Bottle Weight" --> P2
+    P2 -- "Calculated Water Consumption Increment" --> P3
 
-    %% 輸出控制
-    P2 -->|Water Weight/Status| P4
-    P3 -->|Total Amount/Reset| P4
+    P2 -- "Current Water Weight Cup Status" --> P4
+    P3 -- "Today's Total/Reset Flag" --> P4
     
-    %% 回饋
-    P4 -->|LED| User
+    P4 -- "LED Control Signal" --> User
 
-    %% 上傳
     P2 -.-> P5
     P3 -.-> P5
     P4 -.-> P5
-    P5 -->|Data V0-V3| Cloud
+    
+    P5 -- "Data V0-V3" --> Cloud
 ```
