@@ -115,7 +115,7 @@ graph TD
         P1("1.0 Sensor Data Collection<br/>Filtering/Stable Reading"):::process
         P3("3.0 Data Management<br/>EEPROM/NTP/Reset"):::process
         D1[("D1: EEPROM")]:::store
-        P2("2.0 Water Consumption Calculation<br/>Determine Drinking/Adding Water"):::process
+        P2("2.0 Water Consumption<br/>Calculation<br/>Determine Drinking/Adding Water"):::process
         P4("4.0 Output Control<br/>LED/Animation"):::process
         P5("5.0 Cloud Communication<br/>Blynk Timer"):::process
     end
@@ -124,7 +124,7 @@ graph TD
 
     %% --- 連線關係 (使用 -- "文字" --> 語法以避免括號報錯) ---
     Env -- "Original Weight Signal" --> P1
-    User -- "ButtonSetting Command" --> P3
+    User -- "Button<br/>Setting Command" --> P3
     NTP -- "Time Data" --> P3
 
     P1 -- "Stable Total Weight" --> P2
@@ -133,10 +133,10 @@ graph TD
     D1 -- "Read Storage Data" --> P3
 
     P3 -- "Read: Empty Bottle Weight" --> P2
-    P2 -- "Calculated Water Consumption Increment" --> P3
+    P2 -- "Calculated<br/>Water<br/>Consumption<br/>Increment" --> P3
 
-    P2 -- "Current Water Weight Cup Status" --> P4
-    P3 -- "Today's Total/Reset Flag" --> P4
+    P2 -- "Current Water<br/>Weight Cup Status" --> P4
+    P3 -- "Today's Total<br/>Reset Flag" --> P4
     
     P4 -- "LED Control Signal" --> User
 
