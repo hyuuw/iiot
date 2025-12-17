@@ -19,10 +19,34 @@ For students like us, or for office workers who spend long hours at a desk, the 
 ## Smart Coaster System Design Drawing
 
 * DFD Level 0: Comtext Diagram
-![0](./image/level0.png)
+  
+* This diagram illustrates the interaction between the System Boundary and four external entities:
+
+    。User: Performs reset operations via buttons and receives visual feedback from LEDs.
+
+    。Physical Environment: Provides raw weight sensing signals.
+
+    。NTP Time Server: Provides accurate real-time time data, ensuring correct timestamps for drinking records.
+
+    。Blynk Cloud Platform: Receives sensor data (V0-V3) for remote monitoring and visualization.
+  
+    ![0](./image/level0.png)
 
 * DFD Level 1: Decomposition Diagram
-![1](./image/level1.png)
+
+* This diagram details the five core processing modules within the smart coaster and their data flow:
+
+    。Sensor Data Acquisition: Converts analog weight signals into stable digital total weight data.
+
+    。Core Hydration Logic: Compares current and past weights to calculate the "Intake Increment".
+
+    。Data & Time Management: Integrates NTP time data and is responsible for writing/reading EEPROM (non-volatile memory) to ensure data is not lost after power failure.
+
+    。Output Control: Controls the LED indicator status based on the current hydration progress.
+
+    。Cloud Communication: Sends formatted data packets to the Blynk server.
+  
+    ![1](./image/level1.png)
 
 ## Hardware
 
