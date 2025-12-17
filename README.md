@@ -116,7 +116,15 @@
     
     ![wifi](./image/wifi.jpg)
 
-
+* LED Light Strip status:
+  |status|condition|LED Behavior|
+  |------|---------|------------|
+  |colorful|total intake reaches 500g.|multi-color celebration|
+  |red|current water weight < 100g.|solid red|
+  |yellow|cup present, but not lifted for 30 mins.|blinking yellow|
+  |orange|cup remoned, not returned for 10 mins.|blinking orange|
+  |green|system idle or actively drinking.|solid green|
+  
 
 ## Team Members's Role
 | Name     | Student ID  | Assignment |
