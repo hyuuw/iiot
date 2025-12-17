@@ -54,11 +54,16 @@ Assemble the components according to the diagram.
   。Point A connects to GPIO18.
 
   。Point B connects to GND.
-# Smart Coaster System Design Drawing
 
-## DFD Level 0: Comtext Diagram
+## Software
+
+1.First, add the content you need to display in Blynk. For example, we've added Today's Date, LED Status, Current Water Weight, Total Water Intake.
+  
+## Smart Coaster System Design Drawing
+
+* DFD Level 0: Comtext Diagram
 ![0](./image/level0.png)
 
-## DFD Level 1: Decomposition Diagram
+* DFD Level 1: Decomposition Diagram
 ![1](./image/level1.png)
 
