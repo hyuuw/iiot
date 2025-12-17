@@ -62,6 +62,9 @@ Assemble the components according to the diagram.
 * Add the content you need to display in Blynk. For example, we've added Today's Date, LED Status, Current Water Weight, Total Water Intake.
 ![blynk](./image/blynk.jpg)
 
+* !!!!!!Key Points, Each datascream setting must match the code settings in the Arduino; otherwise, the connection will fail.
+![datasaream](./image/blynkdatascream.jpg)
+
 * Include Arduino Library, We have 8 library need to include
 
 * To avoid the problem of not being able to find the library, we chose to manually add it directly to the code.
