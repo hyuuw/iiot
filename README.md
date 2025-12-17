@@ -50,8 +50,10 @@ For students like us, or for office workers who spend long hours at a desk, the 
 
 ## Hardware
 
-Assemble the components according to the diagram.
-![電路圖](./image/cd.jpg)
+* Assemble the components according to the diagram.
+
+* The materials needed are: ESP32, Weight Sensor(HX711), LED Light Strip, Button
+  ![電路圖](./image/cd.jpg)
 
 
 * For ESP32 TO HX711  (RED line)
@@ -64,7 +66,7 @@ Assemble the components according to the diagram.
 
   。The SCK pin connects to GPIO9.
 
-* For ESP32 TO LED strip  (BLUE line)
+* For ESP32 TO LED Light strip  (BLUE line)
 
   。GND connects to GND.
 
