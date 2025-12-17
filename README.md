@@ -79,7 +79,7 @@ Assemble the components according to the diagram.
 
 * !!!You can directly copy our code to your Arduino, but please remember to change it to your own Wi-Fi name and password.
     
-
+![wifi](./image/wifi.jpg)
 
 
 
