@@ -57,12 +57,14 @@ Assemble the components according to the diagram.
 
 ## Software
 
-*Blynk has its own Blynk Cloud platform, which can help you transfer data from Arduino and ESP32 to your mobile phone or web page. You don't need to write complicated mobile app or web page code. You can simply drag and drop buttons, meters, and charts onto the screen to have a monitoring dashboard like the one in the picture.
+* Blynk has its own Blynk Cloud platform, which can help you transfer data from Arduino and ESP32 to your mobile phone or web page. You don't need to write complicated mobile app or web page code. You can simply drag and drop buttons, meters, and charts onto the screen to have a monitoring dashboard like the one in the picture.
 
-。Add the content you need to display in Blynk. For example, we've added Today's Date, LED Status, Current Water Weight, Total Water Intake.
+    。Add the content you need to display in Blynk. For example, we've added Today's Date, LED Status, Current Water Weight, Total Water Intake.
 ![blynk](./image/blynk.jpg)
 
-。
+    。Include Arduino Library, We have 8 library need to include
+
+    
 
 
 
