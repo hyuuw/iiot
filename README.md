@@ -1,9 +1,9 @@
 
 # Smart Coaster - 114NTUST\_IIOT
 
-## When was the last time you took a sip of water?
+* When was the last time you took a sip of water?
 
-For students like us, or for office workers who spend long hours at a desk, the answer is often, ''I don't remember.''
+  For students like us, or for office workers who spend long hours at a desk, the answer is often, ''I don't remember.''
 
 * BECAUSE : An Overlooked Office Wellness Problem
 1. The Cost of Deep Work: When we are immersed in our work, our brains automatically ignore physiological signals like thirst.
