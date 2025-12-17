@@ -57,8 +57,16 @@ Assemble the components according to the diagram.
 
 ## Software
 
-1.First, add the content you need to display in Blynk. For example, we've added Today's Date, LED Status, Current Water Weight, Total Water Intake.
-  
+*Blynk has its own Blynk Cloud platform, which can help you transfer data from Arduino and ESP32 to your mobile phone or web page. You don't need to write complicated mobile app or web page code. You can simply drag and drop buttons, meters, and charts onto the screen to have a monitoring dashboard like the one in the picture.
+
+。Add the content you need to display in Blynk. For example, we've added Today's Date, LED Status, Current Water Weight, Total Water Intake.
+![blynk](./image/blynk.jpg)
+
+。
+
+
+
+
 ## Smart Coaster System Design Drawing
 
 * DFD Level 0: Comtext Diagram
