@@ -64,6 +64,8 @@ Assemble the components according to the diagram.
 
     。Include Arduino Library, We have 8 library need to include
 
+    。To avoid the problem of not being able to find the library, we chose to manually add it directly to the code.
+
     
 
 
