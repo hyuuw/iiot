@@ -71,6 +71,15 @@ Assemble the components according to the diagram.
   
     ![datasaream](./image/blynkdatascream.jpg)
 
+* Arduino
+  
+    。Low Barrier to Entry: You can quickly write program-controlled hardware without needing to delve into low-level register operations.
+
+    。Huge Community & Ecosystem: Whatever sensor or platform you want to connect, you can almost always find ready-made libraries and sample code.
+
+    。High Extensibility: Arduino has a standardized pinout design.
+
+
 * Include Arduino Library, We have 8 library need to include
 
 * To avoid the problem of not being able to find the library, we chose to manually add it directly to the code.
@@ -86,9 +95,9 @@ Assemble the components according to the diagram.
 ## Team Members's Role
 | Name     | Student ID  | Assignment |
 |----------|-------------|---------|
-| 楊婕     | M11451001   |    |
-| 楓尹翔   | M11451007   |    |
-| 簡翊程   | M11451011   |    |
-| 顏梓淮   | M11451027   |    |
-| 吳家瑜   | M11451029   |    |
+| 楊婕     | M11451001   |  PPT Design, Bill of Materials, Hardware |
+| 楓尹翔   | M11451007   |  Website, Blynk platform, Presentation  |
+| 簡翊程   | M11451011   |  Software, Hardware  |
+| 顏梓淮   | M11451027   |  Software, Hardware  |
+| 吳家瑜   | M11451029   |  Github website, System Architecture, Purchasing  |
 
